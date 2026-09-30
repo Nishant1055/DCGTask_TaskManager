@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Committee Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" >
+
+        <header>
+            <h1>Committee Task Manager</h1>
+            <input type="text" id="search" placeholder="Search Task">
+        </header>
+
+        <div class="controls">
+            <button id="addtask">Add Task</button>
+            <button id="filter">Filter</button>
+            <select id="statusfilter">
+                <option value="All">All</option>
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <button id="priority">Priority</button>
+            <select id="priorityfilter">
+                <option value="all">All</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+        </div>
+
+        <div class="form">
+            <div class="taskform">
+                <h2>Add New Task</h2>
+
+                <input type="text" id="title" placeholder="Task Title">
+                <input type="text" id="member" placeholder="Member Name">
+
+                <select id="taskpriority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <input type="date" id="deadline">
+                <div class="formbutton">
+                    <button id="canceltask">Cancel</button>
+                    <button id="savetask">Save Task</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tasklist">
+
+        </div>
+
+        <div class="tally">
+            <p>Total: <span id="total">0</span></p>
+            <p>Completed: <span id="completed">0</span></p>
+            <p>Pending: <span id="pending">0</span></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
